@@ -1,0 +1,171 @@
+/* styles.css */
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 0px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: #f8f9fa;
+  color: #1e1e1e;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+
+.jumbotron {
+  padding-top: 150px;
+  /* padding: 150px 25px; */
+  margin-bottom: 0;
+}
+
+.jumbotron-light {
+  background-color: #f8f9fa;
+}
+
+.jumbotron-dark {
+  background-color: #1e1e1e;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+.profile-img {
+  /* max-width: 100%; */
+  border-radius: 70%;
+  max-width: 200px;
+  /* max-height: 220px; */
+  /* width: auto;
+    height: auto;       */
+}
+
+.skill-badge {
+  background-color: #f8f9fa; /* Default background color */
+  color: #212529;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.mode-toggle {
+  cursor: pointer;
+}
+
+.mode-icon {
+  font-size: 20px;
+}
+
+.default-text {
+  font-size: 20px; /* Adjust font size as needed */
+}
+
+nav.navbar {
+  background-color: #1e1e1e;
+}
+
+nav.navbar .navbar-brand {
+  font-weight: bold;
+  color: #b6b6b6 !important;
+}
+
+.display-6,
+.lead {
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 30px; /* Add padding to the card body */
+}
+
+.card {
+  border-radius: 20px; /* Add border radius to the card */
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect for dark mode */
+}
+
+.card-text {
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.dark-mode .card {
+  background-color: #343a40; /* Change card background color for dark mode */
+  color: #fff; /* Change text color for dark mode */
+}
+
+.with-margin {
+  margin: 0 5px; /* Adjust the margin as needed */
+}
+
+.vertical-line {
+  margin-right: 10px; /* Adjust the spacing between the line and the button */
+  border-right: 0px solid black; /* Adjust the properties of the vertical line */
+  padding-right: 10px; /* Adjust the spacing between the line and the button text */
+}
+
+.col-auto {
+  padding: 0px 8px !important;
+}
+
+/* styles.css */
+
+/* Add padding for small devices and above */
+.section-padding {
+  padding: 50px 0;
+}
+
+/* Add padding for extra small devices and above */
+@media (max-width: 575.98px) {
+  .section-padding {
+    padding: 30px 0;
+  }
+  .default-text {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add padding for medium devices and above */
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+  .default-text {
+    font-size: 15px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add padding for large devices and above */
+@media (min-width: 992px) {
+  .section-padding {
+    padding: 80px 0;
+  }
+  .default-text {
+    font-size: 17px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add padding for extra large devices and above */
+@media (min-width: 1200px) {
+  .section-padding {
+    padding: 100px 0;
+  }
+  .default-text {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+  

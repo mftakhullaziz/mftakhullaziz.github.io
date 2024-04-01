@@ -2,392 +2,398 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miftakhul Aziz</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <title>Software Engineer Portfolio</title>
+    <!-- Link to Roboto font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">mftakhullaziz</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">about</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mftakhull A</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">about</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <!-- <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div> -->
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Miftakhul Aziz</h1>
-        <p class="section__text__p2" style="font-weight: 500;">Software Engineer</p>
-        <p class="text__p3">
-          I am a Software Engineer from Indonesia. I specialize in backend development and data engineering,
-            I have skills in Java and Golang programming. A little information about my daily work activities
-            is developing new features, refactoring code, improving code, creating unit tests, and optimizing code.
-            My educational information, I graduated in Informatics Engineering in
-            Sumatra Institute of Technology Campus in 2021. I also always develop my abilities continuously
-            to learn new things in the world of Software Engineering. If you are interested in me, 
-            let's connect with my social media or if you are interested in working together, you can download my resume!
-        </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/myresume.pdf')">
-            GET MY RESUME
-          </button>
-          
-          <button class="btn-1 btn-color-1" onclick="location.href='https://www.linkedin.com/in/miftakhullaziz/'">
-            LinkedIn
-          </button>
 
-          <button class="btn-1 btn-color-1" onclick="location.href='https://github.com/mftakhullaziz'">
-            Github
-          </button>
-          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button> -->
+  <body class="light-mode">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">mftakhulaziz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" id="about-link">About</a>
+            </li>
+             -->
+            <li class="nav-item">
+              <a class="nav-link" id="experience-link">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="skills-link">Technologies Stack</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" id="projects-link">Educations</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" id="projects-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="article-link">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-link text-light mode-toggle"
+                id="dark-mode-toggle"
+              >
+                <img
+                  src="dark-icon.svg"
+                  id="dark-icon"
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="light-icon.svg"
+                  id="light-icon"
+                  style="display: none"
+                  width="30"
+                  height="30"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
-        <!-- <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/miftakhullaziz/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/mftakhullaziz'"
-          />
-        </div> -->
       </div>
-    </section>
-    <!-- <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a Software Engineer from Indonesia. I develop Rest APIs, clean up code, fix bugs, and add features on the backend. I also do unit testing, create schedules with crontab, and integrate new tech like Java and Golang. I graduated in Informatics Engineering from the Sumatra Institute of Technology in 2021. I'm skilled in Java, Golang, Spring Boot, SQL, Kafka, Elasticsearch, Spark, and Hibernate. Besides coding, I'm good at communication, leadership, and problem-solving. I love learning new things and adapting to different environments.
+    </nav>
+
+    <section id="home" class="jumbotron text-center jumbotron-light">
+      <div class="container">
+        <!-- Your content here -->
+        <h2 class="display-6 mt-4">Hello, I'm Miftakhul Aziz</h1>
+        <p class="lead">Software Engineer | Backend Engineer | Data Engineer</p>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-12">
+            <p class="default-text">
+              I work as Backend Software Engineer at IT consultancy in Singapore
+              but based in Indonesia. My main tasks include building Rest APIs,
+              debugging, adding new features, and conducting unit tests. I
+              specialize in Java and Golang programming and have experience with
+              technologies like Spring Boot, SQL databases, Kafka,
+              Elasticsearch, Spark, and Hibernate. I graduated in Informatics
+              Engineering from the Sumatra Institute of Technology in 2021,
+              focusing on Data and Software Engineering. Outside of technical
+              skills, I'm a strong communicator, and a quick learner, and I
+              thrive in dynamic environments where I can continuously learn and
+              grow.
             </p>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
+        <hr class="my-4" />
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto text-center">
+            <p class="default-text mb-0">Let's connect</p>
+          </div>
+          <div class="col-auto">
+            <div class="social-icons d-flex align-items-center">
+              <a href="https://github.com/mftakhullaziz" target="_blank">
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                  src="github-mark.svg"
+                  data-dark="github-light.svg"
+                  data-light="github-mark.svg"
+                  alt="GitHub"
+                  class="social-icon with-margin"
+                  width="30"
+                  height="30"
+                  id="github-icon"
                 />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/miftakhullaziz"
+                target="_blank"
+              >
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                  src="linkedin-dark.svg"
+                  data-dark="linkedin-light.svg"
+                  data-light="linkedin-dark.svg"
+                  alt="LinkedIn"
+                  class="social-icon with-margin"
+                  width="30"
+                  height="30"
+                  id="linkedin-icon"
                 />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              </a>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+          <div class="col-auto">
+            <span class="vertical-line">|</span>
+            <button class="btn btn-dark">Get My Resume</button>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+
+    <!-- About Section -->
+    <!-- <section id="about" class="container section-padding">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="about-text">
+            Greetings, I'm Miftakhul, a Backend Software Engineer working at an
+            IT consultancy in Singapore but based in Indonesia. My main tasks
+            include building Rest APIs, debugging, adding new features, and
+            conducting unit tests. I specialize in Java and Golang programming
+            and have experience with technologies like Spring Boot, SQL
+            databases, Kafka, Elasticsearch, Spark, and Hibernate. I graduated
+            in Informatics Engineering from the Sumatra Institute of Technology
+            in 2021, focusing on Data and Software Engineering. Outside of
+            technical skills, I'm a strong communicator, and a quick learner,
+            and I thrive in dynamic environments where I can continuously learn
+            and grow.
+          </p>
         </div>
       </div>
     </section> -->
-    <footer>
-      <!-- <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container section-padding">
+      <h2 class="text-center mb-4">Experiences</h2>
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineers at Aleph Labs</h5>
+              <p class="card-text">
+                The job responsibilities include architecting and engineering
+                robust backend services for efficient and scalable RESTful APIs,
+                enhancing existing services to meet evolving demands,
+                spearheading the development of advanced payment services,
+                resolving bugs, conducting comprehensive unit testing,
+                implementing end-to-end logging mechanisms, driving improvements
+                across middleware applications, and crafting tailored software
+                architectures. Technologies stack includes Java, Microservices,
+                AWS, MongoDB, Spring Boot, and more.
+              </p>
+              <p class="card-text">July 2023 - present</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">
+                Software Engineer at Advotics Supply Chain SaaS
+              </h5>
+              <p class="card-text">Job responsibilities description...</p>
+              <p class="card-text">April 2022 - June 2023</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Intern at 123 Tech Startup</h5>
+              <p class="card-text">Job responsibilities description...</p>
+              <p class="card-text">2014 - 2015</p>
+            </div>
+          </div>
         </div>
-      </nav> -->
-      <!-- <p>Copyright &#169; 2024 Miftakhul Aziz. All Rights Reserved.</p> -->
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container section-padding">
+      <h2 class="text-center mb-4">Technologies Stack</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Java</h5>
+              <p class="card-text">Description of Java skill goes here.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">Description of HTML skill goes here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Spring</h5>
+              <p class="card-text">Description of Spring skill goes here.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Go</h5>
+              <p class="card-text">Description of Go skill goes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educations Section -->
+    <!-- <section id="educations" class="container section-padding">
+        <h2 class="text-center mb-4">Educations</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Sumatera Institute of Technologies</h5>
+                <p class="card-text">Bachelor of Informatics Engineering</p>
+                <p class="card-text">August 2016 - March 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- Articles Section -->
+    <section id="article" class="container section-padding">
+        <h2 class="text-center mb-4">Articles</h2>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Article 1</h5>
+                <p class="card-text">Description of Java skill goes here.</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Article 2</h5>
+                <p class="card-text">Description of HTML skill goes here.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Article 3</h5>
+                <p class="card-text">Description of Spring skill goes here.</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Article 4</h5>
+                <p class="card-text">Description of Go skill goes here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container section-padding">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top"
+              alt="Project 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of project 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top"
+              alt="Project 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Description of project 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top"
+              alt="Project 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Description of project 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container section-padding">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; 2024 miftakhullaziz
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- External JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
