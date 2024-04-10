@@ -8,12 +8,12 @@ body {
 
 .light-mode {
   background-color: #f8f9fa;
-  color: #1e1e1e;
+  color: #181818;
 }
 
 .dark-mode {
-  background-color: #1e1e1e;
-  color: #f8f9fa;
+  background-color: #181818;
+  color: #dbdbdb;
 }
 
 .jumbotron {
@@ -27,7 +27,7 @@ body {
 }
 
 .jumbotron-dark {
-  background-color: #1e1e1e;
+  background-color: #181818;
 }
 
 .card {
@@ -76,7 +76,7 @@ body {
 }
 
 nav.navbar {
-  background-color: #1e1e1e;
+  background-color: #181818;
 }
 
 nav.navbar .navbar-brand {
@@ -104,7 +104,7 @@ nav.navbar .navbar-brand {
 
 .dark-mode .card {
   background-color: #343a40; /* Change card background color for dark mode */
-  color: #fff; /* Change text color for dark mode */
+  color: #dbdbdb; /* Change text color for dark mode */
 }
 
 .with-margin {
@@ -121,6 +121,56 @@ nav.navbar .navbar-brand {
   padding: 0px 8px !important;
 }
 
+.custom-card-title {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-card-title-year {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.custom-card-text {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-card-margin {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.container.section-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.jumbotron.text-center {
+  margin-top: 56px; /* Adjusted to accommodate the navbar */
+}
+
+.jumbotron .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 /* styles.css */
 
 /* Add padding for small devices and above */
@@ -135,6 +185,13 @@ nav.navbar .navbar-brand {
   }
   .default-text {
     font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-card-margin {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -167,5 +224,3 @@ nav.navbar .navbar-brand {
     font-size: 20px; /* Adjust font size for smaller screens */
   }
 }
-
-  

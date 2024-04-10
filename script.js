@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
             darkIcon.style.display = "none";
             document.getElementById("home").classList.remove("jumbotron-light");
             document.getElementById("home").classList.add("jumbotron-dark");
-            document.getElementById("home").style.color = "#fff"; // Text color in dark mode
-            document.getElementById("skills").style.backgroundColor = "#1e1e1e"; // Background color in dark mode
+            document.getElementById("home").style.color = "#dbdbdb"; // Text color in dark mode
+            document.getElementById("skills").style.backgroundColor = "#181818"; // Background color in dark mode
             // Switch social icons to dark mode
             githubIcons.src = githubIcons.getAttribute('data-dark');
             linkedinIcons.src = linkedinIcons.getAttribute('data-dark');
