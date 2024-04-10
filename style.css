@@ -17,7 +17,7 @@ body {
 }
 
 .jumbotron {
-  padding-top: 150px;
+  padding-top: 120px;
   /* padding: 150px 25px; */
   margin-bottom: 0;
 }
@@ -170,6 +170,25 @@ nav.navbar .navbar-brand {
   padding-right: 15px;
 }
 
+.hr-light {
+  border-color: #464646; /* Light color */
+}
+
+.hr-dark {
+  border-color: #dbdbdb; /* Light color */
+}
+
+.icon-size {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-sm {
+  padding: 0.5rem 0.75rem; /* Adjust padding to match Bootstrap's btn-sm class */
+  font-size: 1rem; /* Adjust font-size to match Bootstrap's btn-sm class */
+  line-height: 2; /* Adjust line-height to match Bootstrap's btn-sm class */
+  border-radius: 0.5rem; /* Adjust border-radius to match Bootstrap's btn-sm class */
+}
 
 /* styles.css */
 
@@ -180,11 +199,67 @@ nav.navbar .navbar-brand {
 
 /* Add padding for extra small devices and above */
 @media (max-width: 575.98px) {
-  .section-padding {
-    padding: 30px 0;
+  /* .section-padding {
+    padding: 0px 0;
+  } */
+  .card-body {
+    padding: 15px;
+  }
+  .default-display {
+    font-size: 15px; /* Adjust font size for smaller screens */
+  }
+  .default-lead {
+    font-size: 12px; /* Adjust font size for smaller screens */
   }
   .default-text {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+  .jumbotron {
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+  .icon-size {
+    width: 20px;
+    height: 20px;
+  }
+  .btn-sm {
+    padding: 0.25rem 0.5rem; /* Adjust padding to match Bootstrap's btn-sm class */
+    font-size: 0.75rem; /* Adjust font-size to match Bootstrap's btn-sm class */
+    line-height: 1.5; /* Adjust line-height to match Bootstrap's btn-sm class */
+    border-radius: 0.3rem; /* Adjust border-radius to match Bootstrap's btn-sm class */
+  }
+  .btn-section {
+    padding: 0.25rem 0.5rem; /* Adjust padding to match Bootstrap's btn-sm class */
+    font-size: 0.75rem; /* Adjust font-size to match Bootstrap's btn-sm class */
+    line-height: 1.5; /* Adjust line-height to match Bootstrap's btn-sm class */
+    border-radius: 0.3rem; /* Adjust border-radius to match Bootstrap's btn-sm class */
+    margin-left: 10px;
+  }
+  .custom-card-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title-section {
+    font-size: 1rem;
+  }
+  .custom-card-title {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  .custom-card-text {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
+  .custom-card-title-year {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    font-weight: 500;
   }
 }
 

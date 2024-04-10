@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Get all elements with the "social-icon" class
     const githubIcons = document.getElementById("github-icon");
     const linkedinIcons = document.getElementById("linkedin-icon");
+    
+    const hrs = document.querySelectorAll(".hr-light");
 
     darkModeToggle.addEventListener("click", () => {
         if (body.classList.contains("dark-mode")) {
@@ -20,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
             // Switch social icons to light mode
             githubIcons.src = githubIcons.getAttribute('data-light');
             linkedinIcons.src = linkedinIcons.getAttribute('data-light');
+            hrs.forEach(hr => {
+                hr.classList.remove("hr-dark");
+                hr.classList.add("hr-light");
+            });
         } else {
             body.classList.add("dark-mode");
             lightIcon.style.display = "inline";
@@ -31,6 +37,10 @@ document.addEventListener("DOMContentLoaded", function() {
             // Switch social icons to dark mode
             githubIcons.src = githubIcons.getAttribute('data-dark');
             linkedinIcons.src = linkedinIcons.getAttribute('data-dark');
+            hrs.forEach(hr => {
+                hr.classList.remove("hr-light");
+                hr.classList.add("hr-dark");
+            });
         }
     });
 
